@@ -8,5 +8,6 @@ hoursweek = float(input())
 
 monthly_income = ((hourlypay * hoursweek) * 52 / 12)
 
-print("If you get paid at a rate of $", hourlypay, "and perform", hoursweek, "hours of work, you can expect to make: "
-                                                                             "$", monthly_income, "each month!")
+print(
+    f"If you get paid at a rate of ${hourlypay} and perform {hoursweek} hours of work, you can expect to make "
+    f"${round(monthly_income, 2)} each month!")
