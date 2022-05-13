@@ -1,3 +1,5 @@
+import sys
+
 run = True
 
 while run:
@@ -20,6 +22,8 @@ while run:
     while True:
         if run_again == 'yes':
             run = True
-            continue
-        elif run_again == 'no':
             break
+        elif run_again == 'no':
+            sys.exit()  # when user inputs "no", the program will exit
+        else:
+            run_again = input('Invalid input! Enter "yes" to continue or "no" to exit!: ')

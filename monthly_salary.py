@@ -1,3 +1,5 @@
+import sys
+
 run = True
 
 while run:
@@ -16,6 +18,6 @@ while run:
             break
         elif run_again == 'no':
             play = False
-            break
+            sys.exit()
         else:
             run_again = input('Invalid input! Enter "yes" to continue or "no" to exit the calculator: ')
