@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+
+
 import sys
 
 run = True
@@ -7,12 +10,12 @@ while run:
     print("Welcome to the Income Calculator!")
 
     print("Please input how much you are expected to make per hour: ", end=' ')
-    hourlypay = float(input())
+    hourlypay = float(input())  # float for wages, can have decimals
 
     print("Please input how many hours you expect to work per week: ", end=' ')
-    hoursweek = float(input())
+    hoursweek = float(input())  # float for hours, can have decimals
 
-    monthly_income = ((hourlypay * hoursweek) * 52 / 12)
+    monthly_income = ((hourlypay * hoursweek) * 52 / 12)  # hours per week times 52 weeks in a year divided by 12 months
 
     print(
         f"If you get paid at a rate of ${hourlypay} and perform {hoursweek} hours of work, you can expect to make "

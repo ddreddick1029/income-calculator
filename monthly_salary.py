@@ -1,17 +1,18 @@
+#!/usr/bin/env python
+
 import sys
 
 run = True
 
 while run:
-    print(f"Please input your annual salary per year: ", end=' ')
-
-    salary = float(input())
+    print(f"Please input your annual salary per year: ", end=' ')  # produces statement with a space
+    salary = float(input())  # float for salary, salary can possibly have decimals
 
     monthly_income = (salary / 12)
     print(f"If you get paid an annual salary of ${round(salary, 2)} you should receive ${round(monthly_income, 2)} per "
           f"month!")
 
-    run_again = input("Would you attempt with different values?: ").lower()
+    run_again = input("Would you attempt with different values?: ").lower()  # accepts lowercase input
     while True:
         if run_again == 'yes':
             run = True
